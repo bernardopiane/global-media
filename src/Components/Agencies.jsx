@@ -21,7 +21,11 @@ const ItemArea = styled.div`
   padding: 3em 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  /* grid-template-columns: repeat(auto-fit, minmax(300px, 2fr)); */
   gap: 2em;
+  @media (max-width: 800px) {
+    grid-template-columns: 1fr;
+  }
 `;
 
 const Item = styled.div`
